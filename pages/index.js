@@ -1,7 +1,8 @@
+import EventList from "../components/events/event-list";
+import { getFeaturedEvents } from "../dummy-data";
+
 export default function HomePage() {
-  return (
-    <div>
-      <button className="btn btn-primary rounded-none">Button</button>
-    </div>
-  );
+  const FeaturedEvents = getFeaturedEvents();
+
+  return <EventList featureEvents={FeaturedEvents} />;
 }
