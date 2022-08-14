@@ -1,7 +1,7 @@
-export default function Home() {
+export default function HomePage() {
   return (
     <div>
-      <h2 className="underline">Hello world</h2>
+      <button className="btn btn-primary rounded-none">Button</button>
     </div>
   );
 }
