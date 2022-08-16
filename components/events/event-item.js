@@ -9,7 +9,7 @@ export default function EventItem({ event }) {
     return router.push(`/events/${event.id}`);
   };
   return (
-    <div className="card w-96 glass mb-4 rounded-sm shadow-lg">
+    <div className="card w-96 glass mb-4 rounded-t-sm shadow-lg">
       <figure>
         <img src={"/" + event.image} alt={event.title} />
       </figure>
