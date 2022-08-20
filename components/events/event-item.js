@@ -1,5 +1,11 @@
-import Link from "next/link";
 import { useRouter } from "next/router";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import {
+  faArrowRight,
+  faCalendar,
+  faMapLocation,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function EventItem({ event }) {
   const router = useRouter();
@@ -17,15 +23,28 @@ export default function EventItem({ event }) {
         <div>
           <h2 className="card-title text-secondary">{event.title}</h2>
           <div>
+            <FontAwesomeIcon
+              icon={faCalendar}
+              style={{ paddingRight: "10px" }}
+            />
             <time>{humanReadableDate}</time>
           </div>
           <div>
-            <address>{location}</address>
+            <address>
+              <FontAwesomeIcon icon={faMapLocation} /> {location}
+            </address>
           </div>
         </div>
         <div className="card-actions justify-end">
-          <button onClick={redirectUserHandler} className="btn btn-secondary btn-sm rounded capitalize">
-            Explore Event
+          <button
+            onClick={redirectUserHandler}
+            className="btn btn-secondary btn-sm rounded capitalize"
+          >
+            Explore Event{" "}
+            <FontAwesomeIcon
+              icon={faArrowRight}
+              style={{ marginLeft: "10px" }}
+            />
           </button>
         </div>
       </div>
