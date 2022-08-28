@@ -29,6 +29,16 @@ const DUMMY_EVENTS = [
     image: "images/extroverts.jpg",
     isFeatured: true,
   },
+  {
+    id: "e4",
+    title: "Just Anothor Event for extroverts",
+    description:
+      "You probably need no help with networking in general. But focusing your energy correctly - that is something where most people can improve.",
+    location: "My Street 12, 10115 Broke City",
+    date: "2022-04-10",
+    image: "images/computer.jpeg",
+    isFeatured: true,
+  },
 ];
 
 export function getFeaturedEvents() {
