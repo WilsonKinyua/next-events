@@ -10,6 +10,9 @@ export default function HomePage() {
       <Head>
         <title>Just practising Next Js & Tailwind</title>
       </Head>
+      <h1 className="text-center pt-7 text-3xl text-white">
+        Just practising Next Js & Tailwind
+      </h1>
       <EventList featureEvents={FeaturedEvents} />
     </div>
   );
